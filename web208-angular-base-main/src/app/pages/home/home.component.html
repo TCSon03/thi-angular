@@ -1,0 +1,29 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">categoy</th>
+            <th scope="col">price</th>
+            <th scope="col">isNew</th>
+            <th scope="col">action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(p of products; track $index){
+        <tr>
+            <th scope="row">{{p.id}}</th>
+            <td>{{p.name}}</td>
+            <td>{{p.category}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.isNew}}</td>
+            <td>
+                <a [routerLink]="['/product/edit',p.id]" class="btn btn-warning">Edit</a>
+                <button class="btn btn-danger" (click)="handleDelete(p.id)"> Delete</button>
+            </td>
+        </tr>
+        }
+
+
+    </tbody>
+</table>

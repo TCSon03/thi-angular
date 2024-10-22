@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "name": "san pham moi sua",
+      "category": "3",
+      "price": 122222,
+      "isNew": true,
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "congson@gmail.com",
+      "password": "$2a$10$6qCwwmFRRuc0UbloF/qL9OsvZx8nghYgGukNvB7Le2XVuREbisFxy",
+      "id": 1
+    }
+  ]
+}
